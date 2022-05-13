@@ -30,13 +30,6 @@ import {
 import "./style.css";
 
 const Cartridges = () => {
-  const datas = [
-    {
-      name: "Jan 2019",
-      "Product A": 3432,
-      "Procuct B": 2342,
-    },
-  ];
   const navigate = useNavigate();
   const app = () => {
     navigate("/");

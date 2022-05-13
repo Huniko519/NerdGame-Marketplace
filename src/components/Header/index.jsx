@@ -31,7 +31,7 @@ const Header = () => {
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
+          <Navbar.Collapse id="navbarScroll" className="text-center">
             <Nav
               className="me-auto my-2 my-lg-0"
               style={{ maxHeight: "100px" }}
@@ -47,14 +47,24 @@ const Header = () => {
               </Form>
             </Nav>
             <Grdbtn content={t("Connect Wallet")} />
-            <Image src={userAvatar} className="avatarpading" roundedCircle />
-            <NavDropdown
-              className="username"
-              title={t("Victor Glain")}
-              id="collasible-nav-dropdown"
-            >
-              <NavDropdown.Item>{t("Logout")}</NavDropdown.Item>
-            </NavDropdown>
+            <div>
+              <NavDropdown
+                className="username"
+                title={
+                  <>
+                    <Image
+                      src={userAvatar}
+                      className="avatarpading"
+                      roundedCircle
+                    />
+                    Victor Glain
+                  </>
+                }
+                id="collasible-nav-dropdown"
+              >
+                <NavDropdown.Item>{t("Logout")}</NavDropdown.Item>
+              </NavDropdown>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
