@@ -3,11 +3,11 @@
     margin-left: 1.7em;
 }
 
-.navbar_bg {
-    background-color: #201E29;
+.navbar {
+    border: 2px solid #2F2C3D;
 }
 
-.search_bar {
+.searchbar {
     width: 319px !important;
     height: 45px;
     left: 249px;
@@ -21,9 +21,9 @@
     color: #96949D !important;
     border: 1px solid #f44470 !important;
     background: #201e29 !important;
-    /* border-image-source: linear-gradient(90.99deg, #F1028E -0.66%, #FAB43D 99.89%) !important; */
 }
-.search_bar:focus{
+
+.searchbar:focus{
     border: 1px solid #f44470 !important;
     outline: #f44470 !important;
 }
@@ -33,18 +33,7 @@
     box-shadow: unset !important;
 }
 
-.connect_wallet_btn {
-    width: 196px;
-    height: 45px;
-    left: 970px;
-    top: 33px;
-    background: linear-gradient(90.99deg, #F1028E -0.66%, #FAB43D 99.89%);
-    border-radius: 6px !important;
-    border: 1px solid #FAB43D !important;
-
-}
-
-.user_name {
+.username {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -53,9 +42,11 @@
     margin-right: 1.7em;
     color: #FFFFFF !important;
 }
+
 #collasible-nav-dropdown{
     color: #FFFFFF !important;
 }
-.avatar_pading{
+
+.avatarpading{
     margin-left: 2em;
 }
