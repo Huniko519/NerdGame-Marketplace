@@ -274,3 +274,10 @@
     background-color:#C4C4C408;
     min-height: 100vh;
 }
+
+.f-btn{
+    border: none;
+}
+.s-btn{
+    border: none;
+}
