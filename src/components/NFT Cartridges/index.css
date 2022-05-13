@@ -1,0 +1,277 @@
+
+.goback-btn {
+    background-color: #33313E;
+    border-radius: 4px;
+    box-shadow: none !important;
+    margin-bottom: 5%;
+    outline: 0;
+}
+
+.game-detail {
+    display: flex;
+    align-items: flex-start;
+}
+
+.goback-btn:hover {
+    outline: 0;
+    border: none;
+    /* -moz-outline-style: none; */
+}
+
+.btn-text {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF
+}
+
+.market {
+    position: relative;
+    background: #201E29;
+    padding-top: 5%;
+}
+
+.game-img {
+    position: relative;
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+.heading {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: #FFFFFF;
+
+}
+
+.heart {
+    Width: 53px;
+    Height: 45px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.user {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    margin-left: 3%;
+    color: #787E88;
+}
+
+.girl-img {
+    width: 42px;
+    height: 42px;
+}
+
+.user-data {
+    padding-left: 3%;
+
+}
+
+.user-name {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+.profile {
+    display: flex;
+    align-items: end;
+}
+
+.detail {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.card-market {
+    background: #33313E;
+    border-radius: 18px;
+    max-height: 203px;
+    margin: 1px;
+    width: 251px;
+    padding-top: 17px;
+}
+
+.price-details {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    color: #787E88;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+.ethereum-img {
+    width: 26px;
+    height: 42.42px;
+    top: 15.76%;
+}
+.eth-price {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 47px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+.number {
+    text-align: center;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 47px;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+.time {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    /* padding: 0; */
+    /* margin: 0; */
+    /* display: inline;     */
+    font-size: 11px;
+    line-height: 13px;
+    /* identical to box height */
+
+
+    color: #787E88;
+}
+
+.price-card {
+    display: flex;
+
+}
+
+.trade {
+    width: 34px;
+    height: 18px;
+}
+
+.wallet-btn {
+    width: 186px;
+    box-shadow: none !important;
+    height: 49px;
+    background: #F9AF3E;
+    box-shadow: 0px 0px 12px rgba(250, 180, 61, 0.38);
+    border-radius: 6px;
+}
+
+.wallet {
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+
+
+}
+
+.wallet-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.rend {
+    Width: 21px;
+    Height: 19px;
+    /* margin-right: 8px; */
+}
+
+.rend-btn {
+    background: #33313E;
+    box-shadow: 0px 0px 4px rgba(87, 87, 87, 0.25);
+    border-radius: 6px;
+    box-shadow: none !important;
+    width: 186px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buy-btns {
+    margin-top: 3%;
+}
+
+.dropdown-basic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 58px;
+    border: none;
+    background: #2E2C38;
+    border-radius: 6px;
+    margin-top: 6%;
+    color: #FFFFFF;
+    outline: none;
+    box-shadow: none !important;
+
+}
+
+.drop-text {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 38px;
+}
+
+.dropdowns {
+    padding-right: 3%;
+}
+
+.curency-col {
+    display: flex;
+    justify-content: end;
+}
+
+.trade-col {
+    display: flex;
+    justify-content: center;
+}

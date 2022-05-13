@@ -1,0 +1,97 @@
+.post-header {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    top: 10%;
+    color: #FFFFFF;
+}
+
+.post-type {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 38px;
+    top: 178px;
+    color: #FFFFFF;
+}
+
+.post-title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    /* or 156% */
+
+
+    color: #FFFFFF;
+}
+
+.upload-post {
+    width: 375px;
+    height: 314px;
+}
+
+.input-name {
+    width: 583px;
+    height: 52px;
+    border: "none";
+    color: #FFFFFF;
+    background: rgba(196, 196, 196, 0.03);
+    border: 1px solid #302E38;
+    border-radius: 6px;
+}
+
+.post-input-name {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 14px;
+    margin-top: 2%;
+    color: #FFFFFF;
+
+}
+
+.post-textarea {
+    width: 583px;
+    height: 141px;
+    background: rgba(196, 196, 196, 0.03);
+    border: 1px solid #302E38;
+    border-radius: 6px;
+}
+
+.post-dropdown {
+    width: 583px;
+    height: 52px;
+    background: rgba(196, 196, 196, 0.03);
+    border: 1px solid #302E38;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ethereum-img {
+    width: 34px;
+    height: 34px;
+}
+
+.create_btn {
+    width: 196px;
+    height: 52px;
+    margin-top: 2%;
+    background: linear-gradient(90.99deg, #F1028E -0.66%, #FAB43D 99.89%);
+    border-radius: 6px !important;
+    border: 1px solid #FAB43D !important;
+    margin-bottom: 20%;
+}
+
+.btn-col {
+    display: flex;
+    justify-content: end;
+    padding-right: 65px;
+}

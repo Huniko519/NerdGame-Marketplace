@@ -1,0 +1,61 @@
+.navbar-brand {
+    margin-right: 7rem !important;
+    margin-left: 1.7em;
+}
+
+.navbar_bg {
+    background-color: #201E29;
+}
+
+.search_bar {
+    width: 319px !important;
+    height: 45px;
+    left: 249px;
+    top: 26px;
+    border-radius: 6px !important;
+    font-family: 'Poppins' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 20px !important;
+    color: #96949D !important;
+    border: 1px solid #f44470 !important;
+    background: #201e29 !important;
+    /* border-image-source: linear-gradient(90.99deg, #F1028E -0.66%, #FAB43D 99.89%) !important; */
+}
+.search_bar:focus{
+    border: 1px solid #f44470 !important;
+    outline: #f44470 !important;
+}
+
+.form-control:focus {
+    outline: 0;
+    box-shadow: unset !important;
+}
+
+.connect_wallet_btn {
+    width: 196px;
+    height: 45px;
+    left: 970px;
+    top: 33px;
+    background: linear-gradient(90.99deg, #F1028E -0.66%, #FAB43D 99.89%);
+    border-radius: 6px !important;
+    border: 1px solid #FAB43D !important;
+
+}
+
+.user_name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 38px;
+    margin-right: 1.7em;
+    color: #FFFFFF !important;
+}
+#collasible-nav-dropdown{
+    color: #FFFFFF !important;
+}
+.avatar_pading{
+    margin-left: 2em;
+}

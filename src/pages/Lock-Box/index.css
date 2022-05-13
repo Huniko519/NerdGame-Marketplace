@@ -1,0 +1,51 @@
+.lock-screen {
+    /* background-image: url('../../assets/post-img/animat.svg'); */
+    /* left: 228px;
+    top: 101px; */
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(250, 61, 61, 0.2) 39.58%, rgba(43, 13, 34, 0.2) 100%);}
+
+.lock {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 38px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 2%;
+    
+}
+
+.lock-imgs {
+    width: 303px;
+    height: 308px;
+    /* background: url('../../assets/post-img/animat.svg'); */
+}
+
+
+.game-page {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.game-page-topics {
+    display: flex;
+    justify-content: center;
+
+}
+
+.game-lands {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    padding-top: 1%;
+    line-height: 38px;
+    /* identical to box height, or 59% */
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

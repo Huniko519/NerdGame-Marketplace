@@ -1,0 +1,58 @@
+.dropdown-bg {
+    background: #201E29;
+    border-radius: 6px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+}
+
+.sortby-dropdown {
+    background: rgba(214, 214, 214, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    width: 131px;
+    height: 39px;
+    justify-content: space-around;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.sortby-text {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+
+
+    color: #FFFFFF;
+}
+
+.nft-btn {
+    width: 170px;
+    height: 39px;
+    background: #2F2C3D;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    outline: none;
+    box-shadow: none !important;
+}
+
+
+
+.nft-text {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.add-nft-btn{
+    display: flex;
+    justify-content: end;
+}
