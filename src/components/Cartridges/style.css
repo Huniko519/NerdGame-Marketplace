@@ -1,4 +1,5 @@
 
+@import "~react-vis/dist/style";
 .goback-btn {
     background-color: #33313E;
     border-radius: 4px;
@@ -262,10 +263,6 @@
     line-height: 38px;
 }
 
-.dropdowns {
-    padding-right: 3%;
-}
-
 .curency-col {
     display: flex;
     justify-content: end;
@@ -274,4 +271,30 @@
 .trade-col {
     display: flex;
     justify-content: center;
+}
+
+.details-div{
+    padding: 23px;
+    color: white;
+    background: #201E29;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 18px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.chart-div{
+    padding: 23px;
+    color: white;
+    background: #201E29;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 18px;
+}
+
+.text-right{
+    text-align: right;
 }

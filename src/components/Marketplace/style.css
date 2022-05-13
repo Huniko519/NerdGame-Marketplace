@@ -260,10 +260,6 @@
     line-height: 38px;
 }
 
-.dropdowns {
-    padding-right: 3%;
-}
-
 .curency-col {
     display: flex;
     justify-content: end;
@@ -272,4 +268,9 @@
 .trade-col {
     display: flex;
     justify-content: center;
+}
+
+.main-bg{
+    background-color:#C4C4C408;
+    min-height: 100vh;
 }

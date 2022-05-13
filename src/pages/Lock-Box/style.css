@@ -1,12 +1,15 @@
-.lock-screen {
+.screen {
     /* background-image: url('../../assets/post-img/animat.svg'); */
     /* left: 228px;
     top: 101px; */
     width: 100%;
     height: 100%;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(250, 61, 61, 0.2) 39.58%, rgba(43, 13, 34, 0.2) 100%);}
+    background: radial-gradient(50% 50% at 50% 50%, rgba(5, 120, 99, 0.12) 39.58%, rgba(38, 5, 29, 0.2) 100%);
+}
 
-.lock {
+.game-land {
+    height: 38px;
+    text-align: center !important;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -15,26 +18,15 @@
     text-align: right;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding-bottom: 2%;
-    
 }
 
-.lock-imgs {
-    width: 303px;
-    height: 308px;
-    /* background: url('../../assets/post-img/animat.svg'); */
-}
-
-
-.game-page {
-    padding-top: 3%;
-    padding-bottom: 3%;
+.game-imgs {
+    width: 540px;
 }
 
 .game-page-topics {
     display: flex;
     justify-content: center;
-
 }
 
 .game-lands {
@@ -48,4 +40,93 @@
     text-align: right;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  left: 110px;
+  top: 200px;
+  z-index: -1;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(5, 120, 99, 0.12) 39.58%, rgba(38, 5, 29, 0.2) 100%);
+}
+
+.game-page {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: -810px !important;
+}
+
+@media only screen and (min-width: 375px) {
+    .background {
+        height: 300px;
+    }
+    .game-page {
+        margin-top: -300px !important;
+    }
+    .game-imgs {
+        width: 250px ;
+    }
+    .game-land {
+        font-size: 24px !important;
+    }
+    .game-lands {
+        font-size: 24px !important;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .background {
+        height: 300px;
+    }
+    .game-page {
+        margin-top: -300px !important;
+    }
+    .game-imgs {
+        width: 250px ;
+    }
+    .game-land {
+        font-size: 24px !important;
+    }
+    .game-lands {
+        font-size: 24px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .background {
+        height: 500px;
+    }
+    .game-page {
+        margin-top: -488px !important;
+    }
+    .game-imgs {
+        width: 400px ;
+    }
+    .game-land {
+        font-size: 44px !important;
+    }
+    .game-lands {
+        font-size: 44px !important;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .background {
+        height: 750px;
+    }
+    .game-page {
+        margin-top: -667px !important;
+    }
+    .game-imgs {
+        width: 500px;
+    }
+    .game-land {
+        font-size: 64px !important;
+    }
+    .game-lands {
+        font-size: 64px !important;
+    }
 }

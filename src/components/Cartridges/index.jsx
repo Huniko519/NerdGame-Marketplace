@@ -1,6 +1,14 @@
 import React from "react";
-import game from "../../assets/game1.svg";
-import { Container, Row, Col, Stack, Image, Card } from "react-bootstrap";
+import game from "../../assets/games.svg";
+import {
+  Container,
+  Row,
+  Col,
+  Stack,
+  Image,
+  Card,
+  Dropdown,
+} from "react-bootstrap";
 import hear from "../../assets/hear.png";
 import girl from "../../assets/girl.svg";
 import Button from "react-bootstrap/Button";
@@ -10,16 +18,31 @@ import wallet from "../../assets/wallet.svg";
 import rend from "../../assets/ren.svg";
 import arrow from "../../assets/Arrow 1.svg";
 import { useNavigate } from "react-router-dom";
+import TopGames from "../TopGames";
+import {
+  XYPlot,
+  XAxis,
+  YAxis,
+  HorizontalGridLines,
+  LineSeries,
+} from "react-vis";
 
 import "./style.css";
 
-const Nft = () => {
+const Cartridges = () => {
+  const datas = [
+    {
+      name: "Jan 2019",
+      "Product A": 3432,
+      "Procuct B": 2342,
+    },
+  ];
   const navigate = useNavigate();
   const app = () => {
     navigate("/");
   };
   return (
-    <Container className="market">
+    <Container className="market main-bg">
       <Button
         className="goback-btn"
         onClick={app}
@@ -54,7 +77,7 @@ const Nft = () => {
                         </Stack>
                       </Col>
                       <Stack>
-                        <p className="detail">
+                        <p className="detail mt-2">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiumdod tempor incididunt ut labore et
                           dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -68,6 +91,7 @@ const Nft = () => {
                         style={{
                           backgroundColor: "#33313E",
                           borderRadius: "18px",
+                          width: "100%",
                         }}
                       >
                         <Stack className="price-details">
@@ -79,7 +103,7 @@ const Nft = () => {
                               <Image className="trade" src={trade} />
                             </Col>
                           </Stack>
-                          <Image className="ethereum" src={eth} />
+                          <Image className="ethereum-img" src={eth} />
                           <p className="eth-price">0.99 ETH</p>
                         </Stack>
                         <Row>
@@ -115,7 +139,7 @@ const Nft = () => {
               </Row>
             </Col>
             <Col>
-              <Stack className="buy-btns" direction="horizontal" gap={5}>
+              <Stack className="buy-btns" direction="horizontal" gap={2}>
                 <Button
                   className="wallet-btn"
                   style={{ backgroundColor: "#F9AF3E", border: "none" }}
@@ -132,15 +156,108 @@ const Nft = () => {
                   }}
                 >
                   <Image className="rend" src={rend} />{" "}
-                  <span className="wallet-text">Reant NFT</span>
+                  <span className="wallet-text"> Reant NFT</span>
                 </Button>
               </Stack>
             </Col>
           </Row>
+          <Col className="dropdowns" md={12}>
+            <Row>
+              <Col md={6}>
+                <Dropdown>
+                  <Dropdown.Toggle
+                    className="dropdown-basic"
+                    style={{
+                      display: "flex",
+                      backgroundColor: "#2E2C38",
+                      border: "none",
+                    }}
+                  >
+                    <span className="drop-text">Detail</span>
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">
+                      Another action
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">
+                      Something else
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </Col>
+              <Col md={6}>
+                <Dropdown>
+                  <Dropdown.Toggle
+                    className="dropdown-basic"
+                    style={{
+                      display: "flex",
+                      backgroundColor: "#2E2C38",
+                      border: "none",
+                    }}
+                  >
+                    <span className="drop-text">Price history</span>
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">
+                      Another action
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">
+                      Something else
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </Col>
+            </Row>
+            <Row>
+              <Col md={6}>
+                <div className="details-div w-full">
+                  <Row>
+                    <Col>Contract Address</Col>
+                    <Col className="text-right">0x19b8...b5e4</Col>
+                  </Row>
+                  <Row>
+                    <Col>Token ID</Col>
+                    <Col className="text-right">8558</Col>
+                  </Row>
+                  <Row>
+                    <Col>Token Standard</Col>
+                    <Col className="text-right">ERC-721</Col>
+                  </Row>
+                  <Row>
+                    <Col>Blockchain</Col>
+                    <Col className="text-right">Ethereum</Col>
+                  </Row>
+                  <Row>
+                    <Col>Creator Fees</Col>
+                    <Col className="text-right">6%</Col>
+                  </Row>
+                </div>
+              </Col>
+              <Col md={6}>
+                <div className="chart-div w-full">
+                  <XYPlot width={250} height={190}>
+                    <HorizontalGridLines />
+                    <LineSeries
+                      data={[
+                        { x: 1, y: 10 },
+                        { x: 2, y: 5 },
+                        { x: 3, y: 15 },
+                      ]}
+                    />
+                    <XAxis />
+                    <YAxis />
+                  </XYPlot>
+                </div>
+              </Col>
+            </Row>
+          </Col>
         </Col>
       </Row>
+      <TopGames />
     </Container>
   );
 };
 
-export default Nft;
+export default Cartridges;

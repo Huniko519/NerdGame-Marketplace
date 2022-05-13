@@ -6,6 +6,7 @@ import {
   Dropdown,
   Badge,
   Button,
+  InputGroup,
   Image,
 } from "react-bootstrap";
 import plus from "../../assets/post-img/plus.svg";
@@ -23,11 +24,76 @@ const BuySell = () => {
           <Row>
             <Badge
               bg="dark"
-              className="dropdown-bg mt-5 px-3"
+              className="dropdown-bg mt-5"
               style={{ display: "flex" }}
             >
               <Col xs={6}>
-                <Stack direction="horizontal" gap={3}>
+                <InputGroup className="mtc gap-2">
+                  <Dropdown>
+                    <Dropdown.Toggle
+                      className="sortby-dropdown"
+                      style={{
+                        display: "flex",
+                        backgroundColor: "#2E2C38",
+                        border: "none",
+                      }}
+                    >
+                      <span className="sortby-text">Sort by</span>
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">
+                        Another action
+                      </Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">
+                        Something else
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                  <Dropdown>
+                    <Dropdown.Toggle
+                      className="sortby-dropdown"
+                      style={{
+                        display: "flex",
+                        backgroundColor: "#2E2C38",
+                        border: "none",
+                      }}
+                    >
+                      <span className="sortby-text">Categories</span>
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">
+                        Another action
+                      </Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">
+                        Something else
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                  <Dropdown>
+                    <Dropdown.Toggle
+                      className="sortby-dropdown"
+                      style={{
+                        display: "flex",
+                        backgroundColor: "#2E2C38",
+                        border: "none",
+                      }}
+                    >
+                      <span className="sortby-text">Price</span>
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">
+                        Another action
+                      </Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">
+                        Something else
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </InputGroup>
+                {/* <Stack direction="horizontal" gap={3}>
                   <Stack>
                     <Dropdown>
                       <Dropdown.Toggle
@@ -97,7 +163,7 @@ const BuySell = () => {
                       </Dropdown.Menu>
                     </Dropdown>
                   </Stack>
-                </Stack>
+                </Stack> */}
               </Col>
               <Col xs={6} className="add-nft-btn">
                 <Button

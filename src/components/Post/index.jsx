@@ -7,17 +7,17 @@ import {
   Stack,
   Form,
   Dropdown,
-  Button,
 } from "react-bootstrap";
 import upload from "../../assets/post-img/upload.svg";
 import "./style.css";
 import eth from "../../assets/post-img/group.svg";
+import Grdbtn from "../Grdbtn";
 
 const Post = () => {
   return (
     <Container>
       <Row>
-        <Col md={12}>
+        <Col xs={12} md={6} className="mt-5">
           <p className="post-header">Add NFT to Nerdgames Marketplace</p>
           <p className="post-type"> Image, Video, Audio, or 3D Model</p>
           <p className="post-title">
@@ -31,27 +31,29 @@ const Post = () => {
             <input className="input-name" type="text" placeholder="" />
           </Stack>
           <Stack>
-            <p className="post-input-name">External link</p>
+            <p className="post-input-name mt-3">External link</p>
             <input className="input-name" type="text" placeholder="" />
           </Stack>
           <Stack>
-            <Form.Label className="post-input-name">Description</Form.Label>
+            <Form.Label className="post-input-name mt-3">
+              Description
+            </Form.Label>
             <Form
-              className="post-textarea"
+              className="post-textarea mt-2"
               as="textarea"
               placeholder="Please discribe detail discription of your Item"
               rows={3}
             />
           </Stack>
           <Stack>
-            <Form.Label className="post-input-name">Supply</Form.Label>
-            <input className="input-name" type="text" rows={3} />
+            <Form.Label className="post-input-name mt-3">Supply</Form.Label>
+            <input className="input-name mt-2" type="text" rows={3} />
           </Stack>
           <Stack>
-            <Form.Label className="post-input-name">Blaticon</Form.Label>
+            <Form.Label className="post-input-name mt-3">Blaticon</Form.Label>
             <Dropdown>
               <Dropdown.Toggle
-                className="post-dropdown"
+                className="post-dropdown mt-2"
                 style={{
                   display: "flex",
                   backgroundColor: "#2E2C38",
@@ -70,9 +72,9 @@ const Post = () => {
               </Dropdown.Menu>
             </Dropdown>
           </Stack>
-          <Col md={7} className="btn-col">
-            <Button className="create_btn">Create</Button>
-          </Col>
+          <div className="py-3 btn-col mb-5">
+            <Grdbtn content={"Create"} />
+          </div>
         </Col>
       </Row>
     </Container>

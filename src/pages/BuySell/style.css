@@ -1,6 +1,5 @@
 .main-bg{
-    background-color: #D6D6D61A;
-
+    background-color:#C4C4C408;
 }
 
 .dropdown-bg {
@@ -63,4 +62,8 @@
 .nftcard-div{
     background-color: #292935;
     border-radius: 10px;
+}
+
+.mtc{
+    padding: 4px;
 }

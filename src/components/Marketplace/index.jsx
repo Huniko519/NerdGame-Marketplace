@@ -18,6 +18,7 @@ import wallet from "../../assets/wallet.svg";
 import rend from "../../assets/ren.svg";
 import arrow from "../../assets/Arrow 1.svg";
 import { useNavigate } from "react-router-dom";
+import TopGames from "../TopGames";
 
 import "./style.css";
 
@@ -27,7 +28,7 @@ const MarketPlace = () => {
     navigate("/");
   };
   return (
-    <Container className="market">
+    <Container className="market main-bg">
       <Button
         className="goback-btn"
         onClick={app}
@@ -62,7 +63,7 @@ const MarketPlace = () => {
                         </Stack>
                       </Col>
                       <Stack>
-                        <p className="detail">
+                        <p className="detail mt-2">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiumdod tempor incididunt ut labore et
                           dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -76,6 +77,7 @@ const MarketPlace = () => {
                         style={{
                           backgroundColor: "#33313E",
                           borderRadius: "18px",
+                          width: "100%",
                         }}
                       >
                         <Stack className="price-details">
@@ -87,7 +89,7 @@ const MarketPlace = () => {
                               <Image className="trade" src={trade} />
                             </Col>
                           </Stack>
-                          <Image className="ethereum" src={eth} />
+                          <Image className="ethereum-img" src={eth} />
                           <p className="eth-price">0.99 ETH</p>
                         </Stack>
                         <Row>
@@ -123,7 +125,7 @@ const MarketPlace = () => {
               </Row>
             </Col>
             <Col>
-              <Stack className="buy-btns" direction="horizontal" gap={5}>
+              <Stack className="buy-btns" direction="horizontal" gap={2}>
                 <Button
                   className="wallet-btn"
                   style={{ backgroundColor: "#F9AF3E", border: "none" }}
@@ -140,7 +142,7 @@ const MarketPlace = () => {
                   }}
                 >
                   <Image className="rend" src={rend} />{" "}
-                  <span className="wallet-text">Reant NFT</span>
+                  <span className="wallet-text"> Reant NFT</span>
                 </Button>
               </Stack>
             </Col>
@@ -243,6 +245,7 @@ const MarketPlace = () => {
           </Col>
         </Col>
       </Row>
+      <TopGames />
     </Container>
   );
 };
