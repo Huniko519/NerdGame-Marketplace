@@ -1,9 +1,16 @@
+.main-bg{
+    background-color: #D6D6D61A;
+
+}
+
 .dropdown-bg {
     background: #201E29;
     border-radius: 6px;
     height: 58px;
     display: flex;
     align-items: center;
+    width: 95% !important;
+    margin: auto;
 }
 
 .sortby-dropdown {
@@ -24,9 +31,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 20px;
-    /* identical to box height, or 111% */
-
-
     color: #FFFFFF;
 }
 
@@ -42,8 +46,6 @@
     box-shadow: none !important;
 }
 
-
-
 .nft-text {
     font-family: 'Rubik';
     font-style: normal;
@@ -52,7 +54,13 @@
     line-height: 21px;
     color: #FFFFFF;
 }
+
 .add-nft-btn{
     display: flex;
     justify-content: end;
+}
+
+.nftcard-div{
+    background-color: #292935;
+    border-radius: 10px;
 }

@@ -18,7 +18,7 @@ const Header = () => {
   const { t } = useTranslation(["translation"]);
   return (
     <>
-      <Navbar bg="" className="navbar_bg" expand="lg">
+      <Navbar bg="" className="navbar" expand="lg">
         <Container>
           <Navbar.Brand>
             <Link to="/">

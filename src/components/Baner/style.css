@@ -20,15 +20,6 @@
     color: #FFFFFF;
 }
 
-.nft-text{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 26px;
-    color: #FFFFFF;
-}
-
 .sub_text{
     font-family: 'Poppins';
     font-style: normal;
@@ -62,10 +53,4 @@
 }
 .cardImg_right_align{
     justify-content: end !important;
-}
-.header-content-align{
-    position: absolute;
-}
-.banar-img-align{
-    opacity: 0.5;
 }
