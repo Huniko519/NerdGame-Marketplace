@@ -1,11 +1,11 @@
 import React from "react";
-// import Baner from "../../components/Baner";
+import Baner from "../../components/Baner";
 import TopGames from "../../components/TopGames";
 
 const Home = () => {
   return (
     <>
-      {/* <Baner /> */}
+      <Baner />
       <TopGames />
     </>
   );

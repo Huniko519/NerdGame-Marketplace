@@ -20,6 +20,15 @@
     color: #FFFFFF;
 }
 
+.nft-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
 .sub_text{
     font-family: 'Poppins';
     font-style: normal;
@@ -53,4 +62,41 @@
 }
 .cardImg_right_align{
     justify-content: end !important;
+}
+.playr_img{
+    width: 60% !important;
+    margin-right: 200px;
+}
+.header-content-align{
+    position: absolute;
+}
+.banar-img-align{
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+    .card_topalign{
+        display: none;
+    }
+    .banar-img-align{
+        display: none;
+    }
+    .header-content-align {
+        position: relative;
+    }
+    .left_align{
+        padding-top: 2em !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .card_topalign{
+        display: block;
+    }
+    .banar-img-align{
+        display: block;
+    }
+    .header-content-align {
+        position: absolute;
+    }
 }
