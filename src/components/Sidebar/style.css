@@ -1,78 +1,25 @@
-.nav-link {
-  color: rgba(246, 51, 86, 1) !important;
+.pro-sidebar > .pro-sidebar-inner{
+  background-color: transparent !important;
+}
+
+.pro-sidebar .pro-menu > ul > .pro-sub-menu > .pro-inner-list-item {
+  background-color: transparent !important;
+}
+
+.menuicon{
+  width: 19.5px;
+}
+
+.submenu{
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 38px;
+  text-align: right;
   color: #F63356;
-
 }
 
-.menu-btn-align {
-  padding: 10px;
-}
-
-.menu-btn-text {
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 38px;
-  color: #F63356;
-  margin-left: -6%;
-}
-
-.accordion-item {
-  background-color: unset !important;
-  border: unset !important;
-}
-
-.menu-bg-color {
-  /* background: #F63356 !important; */
-}
-
-.accordion-item:last-of-type .accordion-button.collapsed {
-  background: #201e29;
-  color: #F63356;
-  padding-left: 0% !important;
-  padding-bottom: 0px !important;
-}
-
-.dropdown-menu-text {
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 38px;
-  /* identical to box height, or 238% */
-
-  text-align: left;
-
-  color: #787E88;
-}
-
-.accordion-body {
-  padding: 0.1rem 0.5rem !important;
-  text-align: left !important;
-}
-
-.accordion-button:not(.collapsed) {
-  background: #201e29 !important;
-  color: #ef2f50 !important;
-  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%) !important;
-}
-.accordion-button:focus{
-  padding-left: 0% !important;
-  border-color: unset !important;
-  outline: 0;
-  box-shadow: unset !important;
-}
-.accordion-item:first-of-type .accordion-button{
-  padding-left: 0% !important;
-  padding-bottom: 0 !important;
-}
-.accordion-toggle .indicator
-{
-  color:#fff !important;
+.menuitem{
+  font-size: 14px !important;
 }

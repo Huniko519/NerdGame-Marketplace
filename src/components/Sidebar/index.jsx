@@ -1,6 +1,5 @@
 import React from "react";
-import { Image, Nav, Row, Col, Accordion } from "react-bootstrap";
-// import { Nav, Button } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import classNames from "classnames";
 import "./style.css";
 import HomeImg from "../../assets/Home.svg";
@@ -12,136 +11,114 @@ import Rentnft from "../../assets/rent.svg";
 import Land from "../../assets/land.svg";
 import Lokbox from "../../assets/lockbox.svg";
 import NFT from "../../assets/nft.svg";
+import Dashboard from "../../assets/dashboard.svg";
+import Saved from "../../assets/saved.svg";
+import Collection from "../../assets/collection.svg";
+import History from "../../assets/history.svg";
+import Wallet from "../../assets/homewallet.svg";
+import { Link } from "react-router-dom";
+
+import { ProSidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
+import "react-pro-sidebar/dist/css/styles.css";
 
 const SideBar = ({ isOpen = true, toggle = () => {} }) => {
-  //   render() {
   return (
     <div className={classNames("sidebar", { "is-open": isOpen })}>
-      <div className="sidebar-header"></div>
-
-      <Accordion>
-        <Accordion.Item eventKey="0" className="menu-bg-color dropdown-pd">
-          <Accordion.Header className="dropdown-menu-text">
-            <Image className="menu-btn-align" src={MarketplaceIcon}></Image>
-            MarketPlace
-          </Accordion.Header>
-          <Accordion.Body className="dropdown-pd">
-            <Nav.Link href="#action1">
-              {" "}
-              <Row>
-                {" "}
-                <Col xs={2}>
-                  {" "}
-                  <Image src={Buysell} />
-                </Col>{" "}
-                <Col xs={10} className="dropdown-menu-text">
-                  {" "}
-                  Buy/Sell NFT{" "}
-                </Col>{" "}
-              </Row>
-            </Nav.Link>
-            <Nav.Link href="#action2">
-              {" "}
-              <Row>
-                {" "}
-                <Col xs={2}>
-                  {" "}
-                  <Image src={Rentnft} />
-                </Col>{" "}
-                <Col xs={10} className="dropdown-menu-text">
-                  {" "}
-                  Rent NFT{" "}
-                </Col>
-              </Row>
-            </Nav.Link>
-            <Nav.Link href="#action3">
-              {" "}
-              <Row>
-                {" "}
-                <Col xs={2}>
-                  {" "}
-                  <Image src={NFT} />
-                </Col>{" "}
-                <Col xs={10} className="dropdown-menu-text">
-                  {" "}
-                  NFT Cartridges{" "}
-                </Col>
-              </Row>
-            </Nav.Link>
-            <Nav.Link href="#action4">
-              {" "}
-              <Row>
-                {" "}
-                <Col xs={2}>
-                  {" "}
-                  <Image src={Lokbox} />
-                </Col>{" "}
-                <Col xs={10} className="dropdown-menu-text">
-                  {" "}
-                  Lock-Box
-                </Col>
-              </Row>
-            </Nav.Link>
-            <Nav.Link href="#action5">
-              {" "}
-              <Row>
-                {" "}
-                <Col xs={2}>
-                  {" "}
-                  <Image src={Land} />
-                </Col>{" "}
-                <Col xs={10} className="dropdown-menu-text">
-                  {" "}
-                  Lands{" "}
-                </Col>
-              </Row>
-            </Nav.Link>
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
-
-      <Nav className="flex-column pt-2">
-        {/* <p className="ml-3">Heading</p> */}
-        {/* <SubMenu
-                    title="MarketPlace"
-                    icon={faCopy}
-                    items={["Link", "Link2", "Active"]}
-                /> */}
-
-        {/* <Nav.Item className="active">
-                    <Nav.Link href="/">
-                        <FontAwesomeIcon icon={faHome} className="mr-2" />
-                        MarketPlace
-                    </Nav.Link>
-                </Nav.Item> */}
-
-        <Nav.Item>
-          <Nav.Link href="" className="menu-btn-text">
-            {/* <FontAwesomeIcon icon={faBriefcase} className="mr-2" /> */}
-            <Image className="menu-btn-align" src={HomeImg}></Image>
-            Home
-          </Nav.Link>
-        </Nav.Item>
-
-        <Nav.Item>
-          <Nav.Link href="" className="menu-btn-text">
-            {/* <FontAwesomeIcon icon={faBriefcase} className="mr-2" /> */}
-            <Image className="menu-btn-align" src={Nodification}></Image>
-            Notifications
-          </Nav.Link>
-        </Nav.Item>
-
-        <Nav.Item>
-          <Nav.Link href="" className="menu-btn-text">
-            {/* <FontAwesomeIcon icon={faImage} className="mr-2" /> */}
-            <Image className="menu-btn-align" src={SettingIcon}></Image>
-            Setting
-          </Nav.Link>
-        </Nav.Item>
-      </Nav>
+      <ProSidebar width={"100%"}>
+        <Menu iconShape="round">
+          <SubMenu
+            title={<span className="submenu">MarketPlace</span>}
+            icon={
+              <Image className="menu-btn-align" src={MarketplaceIcon}></Image>
+            }
+            defaultOpen={true}
+          >
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={Buysell} className="menuicon" />}
+              active={true}
+            >
+              <Link to="/1">Buy/Sell NFT</Link>
+            </MenuItem>
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={Rentnft} className="menuicon" />}
+            >
+              <Link to="/2">Rent NFT</Link>
+            </MenuItem>
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={NFT} className="menuicon" />}
+            >
+              <Link to="/1">NFT Cartridges</Link>
+            </MenuItem>
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={Lokbox} className="menuicon" />}
+            >
+              <Link to="/1">Lock-Box</Link>
+            </MenuItem>
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={Land} className="menuicon" />}
+            >
+              <Link to="/1">Lands</Link>
+            </MenuItem>
+          </SubMenu>
+          <SubMenu
+            title={<span className="submenu">Home</span>}
+            icon={<Image className="menu-btn-align" src={HomeImg}></Image>}
+          >
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={Dashboard} className="menuicon" />}
+            >
+              <Link to="/1">Dashboard</Link>
+            </MenuItem>
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={Saved} className="menuicon" />}
+            >
+              <Link to="/1">Saved</Link>
+            </MenuItem>
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={Collection} className="menuicon" />}
+            >
+              <Link to="/1">My Collection</Link>
+            </MenuItem>
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={Wallet} className="menuicon" />}
+            >
+              <Link to="/1">Wallet</Link>
+            </MenuItem>
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={History} className="menuicon" />}
+            >
+              <Link to="/1">History</Link>
+            </MenuItem>
+          </SubMenu>
+          <MenuItem
+            className="menuitem"
+            icon={<Image src={Nodification} className="menuicon" />}
+          >
+            <Link to="/1">
+              <span className="submenu">Nodifications</span>
+            </Link>
+          </MenuItem>
+          <MenuItem
+            className="menuitem"
+            icon={<Image src={SettingIcon} className="menuicon" />}
+          >
+            <Link to="/1">
+              <span className="submenu">Settings</span>
+            </Link>
+          </MenuItem>
+        </Menu>
+      </ProSidebar>
     </div>
   );
 };
-// }
-
 export default SideBar;
