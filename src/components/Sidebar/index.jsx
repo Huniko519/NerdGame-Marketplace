@@ -50,19 +50,19 @@ const SideBar = ({ isOpen = true, toggle = () => {} }) => {
               className="menuitem"
               icon={<Image src={NFT} className="menuicon" />}
             >
-              <Link to="/1">NFT Cartridges</Link>
+              <Link to="/4">NFT Cartridges</Link>
             </MenuItem>
             <MenuItem
               className="menuitem"
               icon={<Image src={Lokbox} className="menuicon" />}
             >
-              <Link to="/1">Lock-Box</Link>
+              <Link to="/5">Lock-Box</Link>
             </MenuItem>
             <MenuItem
               className="menuitem"
               icon={<Image src={Land} className="menuicon" />}
             >
-              <Link to="/1">Lands</Link>
+              <Link to="/3">Lands</Link>
             </MenuItem>
           </SubMenu>
           <SubMenu

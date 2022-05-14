@@ -6,6 +6,10 @@
   background-color: transparent !important;
 }
 
+.pro-sidebar .pro-menu.shaped .pro-menu-item > .pro-inner-item > .pro-icon-wrapper {
+  background-color: transparent !important;
+}
+
 .menuicon{
   width: 19.5px;
 }

@@ -1,28 +1,22 @@
 import React from "react";
-import { Col, Row, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import game from "../../assets/post-img/animat.svg";
 import "./style.css";
-import comsonpng from "../../assets/post-img/animat.svg";
 
-const Newgame = () => {
+const NewGame = () => {
   return (
     <>
-      <div>
-        <Image className="background" src={comsonpng} alt="Pineapple" />
-        <Row className="game-page mt-10">
-          <Col xs={12} className="game-page-topics mt-1">
-            <p className="game-land">LAND</p>
-          </Col>
-          <Col xs={12} className="game-page-topics mt-1">
-            <Image className="game-imgs" src={game} />
-          </Col>
-          <Col xs={12} className="game-page-topics mt-1">
-            <p className="game-lands">COMING SOON</p>
-          </Col>
-        </Row>
+      <div className="main-bg">
+        <div className="nheader">
+          <div className="nheader-info">
+            <p className="ngame-land1">LAND</p>
+            <Image className="ngame-imgs" src={game} />
+            <p className="ngame-land2">COMING SOON</p>
+          </div>
+        </div>
       </div>
     </>
   );
 };
 
-export default Newgame;
+export default NewGame;

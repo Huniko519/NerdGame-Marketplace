@@ -272,7 +272,7 @@
 
 .main-bg{
     background-color:#C4C4C408;
-    min-height: 100vh;
+    min-height: calc(100vh - 85px);
 }
 
 .f-btn{
@@ -280,4 +280,5 @@
 }
 .s-btn{
     border: none;
+
 }

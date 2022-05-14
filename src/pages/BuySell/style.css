@@ -1,5 +1,6 @@
 .main-bg{
     background-color:#C4C4C408;
+    min-height: calc(100vh - 85px);
 }
 
 .dropdown-bg {
