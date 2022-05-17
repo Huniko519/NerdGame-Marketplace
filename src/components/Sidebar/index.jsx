@@ -31,38 +31,37 @@ const SideBar = ({ isOpen = true, toggle = () => {} }) => {
             icon={
               <Image className="menu-btn-align" src={MarketplaceIcon}></Image>
             }
-            defaultOpen={true}
           >
             <MenuItem
               className="menuitem"
               icon={<Image src={Buysell} className="menuicon" />}
               active={true}
             >
-              <Link to="/1">Buy/Sell NFT</Link>
+              <Link to="/">Buy/Sell NFT</Link>
             </MenuItem>
             <MenuItem
               className="menuitem"
               icon={<Image src={Rentnft} className="menuicon" />}
             >
-              <Link to="/2">Rent NFT</Link>
+              <Link to="/">Rent NFT</Link>
             </MenuItem>
             <MenuItem
               className="menuitem"
               icon={<Image src={NFT} className="menuicon" />}
             >
-              <Link to="/4">NFT Cartridges</Link>
+              <Link to="/">NFT Cartridges</Link>
             </MenuItem>
             <MenuItem
               className="menuitem"
               icon={<Image src={Lokbox} className="menuicon" />}
             >
-              <Link to="/5">Lock-Box</Link>
+              <Link to="/">Lock-Box</Link>
             </MenuItem>
             <MenuItem
               className="menuitem"
               icon={<Image src={Land} className="menuicon" />}
             >
-              <Link to="/3">Lands</Link>
+              <Link to="/">Lands</Link>
             </MenuItem>
           </SubMenu>
           <SubMenu
@@ -73,38 +72,38 @@ const SideBar = ({ isOpen = true, toggle = () => {} }) => {
               className="menuitem"
               icon={<Image src={Dashboard} className="menuicon" />}
             >
-              <Link to="/1">Dashboard</Link>
+              <Link to="/">Dashboard</Link>
             </MenuItem>
             <MenuItem
               className="menuitem"
               icon={<Image src={Saved} className="menuicon" />}
             >
-              <Link to="/1">Saved</Link>
+              <Link to="/">Saved</Link>
             </MenuItem>
             <MenuItem
               className="menuitem"
               icon={<Image src={Collection} className="menuicon" />}
             >
-              <Link to="/1">My Collection</Link>
+              <Link to="/">My Collection</Link>
             </MenuItem>
             <MenuItem
               className="menuitem"
               icon={<Image src={Wallet} className="menuicon" />}
             >
-              <Link to="/1">Wallet</Link>
+              <Link to="/">Wallet</Link>
             </MenuItem>
             <MenuItem
               className="menuitem"
               icon={<Image src={History} className="menuicon" />}
             >
-              <Link to="/1">History</Link>
+              <Link to="/">History</Link>
             </MenuItem>
           </SubMenu>
           <MenuItem
             className="menuitem"
             icon={<Image src={Nodification} className="menuicon" />}
           >
-            <Link to="/1">
+            <Link to="/">
               <span className="submenu">Nodifications</span>
             </Link>
           </MenuItem>
@@ -112,10 +111,64 @@ const SideBar = ({ isOpen = true, toggle = () => {} }) => {
             className="menuitem"
             icon={<Image src={SettingIcon} className="menuicon" />}
           >
-            <Link to="/1">
+            <Link to="/">
               <span className="submenu">Settings</span>
             </Link>
           </MenuItem>
+          <SubMenu
+            title={<span className="submenu">Design-Vs</span>}
+            icon={<Image className="menu-btn-align" src={HomeImg}></Image>}
+            defaultOpen={true}
+          >
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={Dashboard} className="menuicon" />}
+            >
+              <Link to="/">Desktop-1</Link>
+            </MenuItem>
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={Dashboard} className="menuicon" />}
+            >
+              <Link to="/6">Desktop-11, 12</Link>
+            </MenuItem>
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={Dashboard} className="menuicon" />}
+            >
+              <Link to="/1">Desktop-3, 4, 6</Link>
+            </MenuItem>
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={Dashboard} className="menuicon" />}
+            >
+              <Link to="/4">Desktop-13</Link>
+            </MenuItem>
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={Dashboard} className="menuicon" />}
+            >
+              <Link to="/4">* Desktop-7</Link>
+            </MenuItem>
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={Dashboard} className="menuicon" />}
+            >
+              <Link to="/2">Desktop-8</Link>
+            </MenuItem>
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={Dashboard} className="menuicon" />}
+            >
+              <Link to="/5">Desktop-9</Link>
+            </MenuItem>
+            <MenuItem
+              className="menuitem"
+              icon={<Image src={Dashboard} className="menuicon" />}
+            >
+              <Link to="/3">Desktop-10</Link>
+            </MenuItem>
+          </SubMenu>
         </Menu>
       </ProSidebar>
     </div>

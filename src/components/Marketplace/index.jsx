@@ -18,7 +18,7 @@ import eth from "../../assets/eth.svg";
 import trade from "../../assets/trade.svg";
 import wallet from "../../assets/wallet.svg";
 import rend from "../../assets/ren.svg";
-import arrow from "../../assets/Arrow 1.svg";
+import arrow from "../../assets/arrow.svg";
 import { useNavigate } from "react-router-dom";
 import TopGames from "../TopGames";
 

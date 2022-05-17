@@ -170,9 +170,6 @@
     font-style: normal;
     font-weight: 400;
     text-align: center;
-    /* padding: 0; */
-    /* margin: 0; */
-    /* display: inline;     */
     font-size: 11px;
     line-height: 13px;
     /* identical to box height */
@@ -221,6 +218,19 @@
     Width: 21px;
     Height: 19px;
     /* margin-right: 8px; */
+}
+
+.luice {
+    Width: 100%;
+    Height: 271px;
+    border-radius: 0px 15px 15px 0px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 900px) {
+    .luice{
+        border-radius: 0px 0px 15px 15px;
+    }
 }
 
 .rend-btn {
@@ -275,6 +285,19 @@
 
 .details-div{
     padding: 23px;
+    color: white;
+    background: #201E29;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 18px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.cdetails-div{
     color: white;
     background: #201E29;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.3);

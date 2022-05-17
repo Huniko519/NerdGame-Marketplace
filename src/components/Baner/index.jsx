@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Image, Row, Button } from "react-bootstrap";
+import { Col, Image, Row } from "react-bootstrap";
 import "./style.css";
 import CardImg from "../../assets/cardImg.svg";
 import Grdbtn from "../Grdbtn";

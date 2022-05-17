@@ -17,10 +17,6 @@
     margin-bottom: 0;
 }
 
-.cardImg_right_align{
-    justify-content: end !important;
-}
-
 .playr_img{
     width: 75% !important;
 }

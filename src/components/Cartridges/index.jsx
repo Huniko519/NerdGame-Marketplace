@@ -1,14 +1,6 @@
 import React from "react";
 import game from "../../assets/games.svg";
-import {
-  Container,
-  Row,
-  Col,
-  Stack,
-  Image,
-  Card,
-  Dropdown,
-} from "react-bootstrap";
+import { Container, Row, Col, Stack, Image, Card } from "react-bootstrap";
 import hear from "../../assets/hear.png";
 import girl from "../../assets/girl.svg";
 import Button from "react-bootstrap/Button";
@@ -16,17 +8,10 @@ import eth from "../../assets/eth.svg";
 import trade from "../../assets/trade.svg";
 import wallet from "../../assets/wallet.svg";
 import rend from "../../assets/ren.svg";
-import arrow from "../../assets/Arrow 1.svg";
+import arrow from "../../assets/arrow.svg";
 import { useNavigate } from "react-router-dom";
 import TopGames from "../TopGames";
-import {
-  XYPlot,
-  XAxis,
-  YAxis,
-  HorizontalGridLines,
-  LineSeries,
-} from "react-vis";
-
+import lucie from "../../assets/post-img/lucie.jpg";
 import "./style.css";
 
 const Cartridges = () => {
@@ -154,94 +139,22 @@ const Cartridges = () => {
               </Stack>
             </Col>
           </Row>
-          <Col className="dropdowns" md={12}>
+          <Col className="dropdowns mt-5" md={12}>
             <Row>
-              <Col md={6}>
-                <Dropdown>
-                  <Dropdown.Toggle
-                    className="dropdown-basic"
-                    style={{
-                      display: "flex",
-                      backgroundColor: "#2E2C38",
-                      border: "none",
-                    }}
-                  >
-                    <span className="drop-text">Detail</span>
-                  </Dropdown.Toggle>
-                  <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">
-                      Another action
-                    </Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">
-                      Something else
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </Col>
-              <Col md={6}>
-                <Dropdown>
-                  <Dropdown.Toggle
-                    className="dropdown-basic"
-                    style={{
-                      display: "flex",
-                      backgroundColor: "#2E2C38",
-                      border: "none",
-                    }}
-                  >
-                    <span className="drop-text">Price history</span>
-                  </Dropdown.Toggle>
-                  <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">
-                      Another action
-                    </Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">
-                      Something else
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </Col>
-            </Row>
-            <Row>
-              <Col md={6}>
-                <div className="details-div w-full">
+              <Col md={12}>
+                <div className="cdetails-div w-full">
                   <Row>
-                    <Col>Contract Address</Col>
-                    <Col className="text-right">0x19b8...b5e4</Col>
+                    <Col md={6}>
+                      <div className="px-5 py-5">
+                        Players can Rent the NFT total price with a 100% Token
+                        drop. Or Rent it for a lower price with a revenue share
+                        with the owner
+                      </div>
+                    </Col>
+                    <Col md={6}>
+                      <Image className="luice" src={lucie} />
+                    </Col>
                   </Row>
-                  <Row>
-                    <Col>Token ID</Col>
-                    <Col className="text-right">8558</Col>
-                  </Row>
-                  <Row>
-                    <Col>Token Standard</Col>
-                    <Col className="text-right">ERC-721</Col>
-                  </Row>
-                  <Row>
-                    <Col>Blockchain</Col>
-                    <Col className="text-right">Ethereum</Col>
-                  </Row>
-                  <Row>
-                    <Col>Creator Fees</Col>
-                    <Col className="text-right">6%</Col>
-                  </Row>
-                </div>
-              </Col>
-              <Col md={6}>
-                <div className="chart-div w-full">
-                  <XYPlot width={250} height={190}>
-                    <HorizontalGridLines />
-                    <LineSeries
-                      data={[
-                        { x: 1, y: 10 },
-                        { x: 2, y: 5 },
-                        { x: 3, y: 15 },
-                      ]}
-                    />
-                    <XAxis />
-                    <YAxis />
-                  </XYPlot>
                 </div>
               </Col>
             </Row>
